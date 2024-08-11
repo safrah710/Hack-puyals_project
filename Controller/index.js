@@ -1,0 +1,11 @@
+import express from 'express';
+import logincontroller from './Logincontroller.js';
+import Complaintcontroller from './Complaintcontroller.js';
+import Ideacontroller from './Ideacontroller.js';
+import Feedbackcontroller from './Feedbackcontroller.js';
+const controller=express.Router();
+controller.use('/login',logincontroller);
+controller.use('/complaint',Complaintcontroller);
+controller.use('/idea',Ideacontroller);
+controller.use('/feedback',Feedbackcontroller);
+export default controller;
