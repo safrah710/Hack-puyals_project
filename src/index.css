@@ -289,7 +289,7 @@ body, html {
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
-/* General Page Styling */
+
 .complaint-page {
   font-family: Arial, sans-serif;
   background-color: #f7f8fa;
@@ -298,7 +298,7 @@ body, html {
   margin: 0 auto;
 }
 
-/* Header Styling */
+
 .page-header {
   display: flex;
   justify-content: space-between;
@@ -324,7 +324,7 @@ body, html {
   background-color: #0056b3;
 }
 
-/* No Complaints Message Styling */
+
 .no-complaints {
   display: flex;
   justify-content: center;
@@ -338,7 +338,7 @@ body, html {
   font-size: 1.5rem;
 }
 
-/* Complaint Card Styling */
+
 .complaints-container {
   display: flex;
   flex-direction: column;
@@ -363,7 +363,7 @@ body, html {
   margin: 5px 0;
 }
 
-/* Remark Section Styling */
+
 .remark-section {
   margin-top: 15px;
 }
@@ -402,7 +402,7 @@ body, html {
   background-color: #0056b3;
 }
 
-/* No Ideas Message Styling */
+
 .no-ideas {
   display: flex;
   justify-content: center;
@@ -416,7 +416,7 @@ body, html {
   font-size: 1.5rem;
 }
 
-/* Idea Card Styling */
+
 .ideas-container {
   display: flex;
   flex-direction: column;
@@ -441,7 +441,6 @@ body, html {
   margin: 5px 0;
 }
 
-/* Remark Section Styling */
 .remark-section {
   margin-top: 15px;
 }
@@ -467,7 +466,7 @@ body, html {
   background-color: #218838;
 }
 
-/* Delete Idea Button Styling */
+
 .delete-idea-btn {
   background-color: #dc3545;
   color: white;
@@ -654,9 +653,7 @@ body, html {
   border-radius: 4px;
   cursor: pointer;
 }
-/*--------------------------------------------------------------
-# Navigation Menu
---------------------------------------------------------------*/
+
 .custom-nav {
   font-size: 1rem;
   font-weight: 400;
@@ -699,7 +696,7 @@ body, html {
   padding-right: 5rem;
 }
 
-/* Desktop Navigation */
+
 .nav-menu,
 .nav-menu * {
   margin: 0;
@@ -810,7 +807,7 @@ body, html {
   }
 }
 
-/* Mobile Navigation */
+
 .mobile-nav {
   position: fixed;
   top: 0;
@@ -913,9 +910,7 @@ body, html {
   color: #fff;
 }
 
-/*--------------------------------------------------------------
-# Scrollbar
---------------------------------------------------------------*/
+
 ::-webkit-scrollbar {
   width: 0.4rem;
   height: 0.4rem;
@@ -935,9 +930,7 @@ body, html {
   background-color: rgb(160, 101, 120);
 }
 
-/*--------------------------------------------------------------
-# Loader
---------------------------------------------------------------*/
+
 
 #loader-wrapper {
   position: fixed;
@@ -1038,9 +1031,7 @@ h6,
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#b65070", endColorstr="#520425", GradientType=1);
 }
 
-/*--------------------------------------------------------------
-# Socials
---------------------------------------------------------------*/
+
 #soc ul {
   list-style: none;
   padding: 0;
@@ -1050,7 +1041,7 @@ h6,
 
 #soc ul li {
   margin-bottom: 20px;
-  /* Adjust spacing between each list item */
+  
 }
 
 #soc ul li a {
@@ -1183,7 +1174,7 @@ h6,
   position: relative;
 }
 
-/* Inside one column, lay out all items in column direction */
+
 .column {
   --column-offset: 10vh;
   display: flex;
@@ -1191,7 +1182,7 @@ h6,
   padding: var(--column-offset) 0;
 }
 
-/* Limit site of the images */
+
 .column__item-imgwrap img {
   border-radius: 1em;
   width: 100%;
@@ -1204,7 +1195,7 @@ h6,
   text-align: center;
 }
 
-/* Adjust position of warning */
+
 .warning {
   position: fixed;
   top: 1rem;
@@ -1217,31 +1208,29 @@ h6,
 
 @supports (animation-timeline: scroll()) {
 
-  /* As we're about to shift content out of .columns, we need it to hide its overflow */
+
   .columns {
     overflow-y: hidden;
   }
 
   .column-reverse {
-    /* Flip item order in reverse columns */
+ 
     flex-direction: column-reverse;
   }
 
-  /* Set up Animation */
+/
   @keyframes adjust-position {
 
-    /* Start position: shift entire column up, but not so that it goes out of view */
     from {
       transform: translateY(calc(-100% + 100vh));
     }
 
-    /* End position: shift entire column down, but not so that it goes out of view */
+   
     to {
       transform: translateY(calc(100% - 100vh));
     }
   }
 
-  /* Hook our animation with the timeline to our columns */
   .column-reverse {
     animation: adjust-position linear forwards;
     animation-timeline: scroll(root block);
